@@ -10,15 +10,7 @@ let package = Package(
     products: [
         .library(name: "LumiLoggingKit", targets: ["LumiLoggingKit"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/CofficLab/LumiLocalization.git", from: "1.0.0"),
-    ],
     targets: [
-        .target(
-            name: "LumiLoggingKit",
-            dependencies: [
-                .product(name: "LumiLocalizationKit", package: "LumiLocalization"),
-            ]
-        ),
+        .target(name: "LumiLoggingKit"),
     ]
 )
