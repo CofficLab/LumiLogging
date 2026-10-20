@@ -12,5 +12,10 @@ let package = Package(
     ],
     targets: [
         .target(name: "LumiLoggingKit"),
+        .testTarget(
+            name: "LumiLoggingKitTests",
+            dependencies: ["LumiLoggingKit"],
+            path: "Tests/LumiLoggingKitTests"
+        ),
     ]
 )
